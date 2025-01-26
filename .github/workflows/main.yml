@@ -18,9 +18,9 @@ jobs:
 
       # 2. Set up Xcode environment
       - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v2
+        uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: 14.3 # Adjust to your Xcode version
+          xcode-version: 15.2 # Adjust to your Xcode version
 
       # 3. Resolve Swift Package Manager dependencies
       - name: Resolve Swift packages
@@ -33,5 +33,5 @@ jobs:
             -workspace TourKsa_Swe.xcworkspace \
             -scheme TourKsa_Swe \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 14' \
+            -destination 'platform=iOS Simulator,name=iPhone 15 Pro' \
             clean test
