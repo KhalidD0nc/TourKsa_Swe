@@ -8,9 +8,7 @@
 import XCTest
 
 final class TourKsa_SweTests: XCTestCase {
-
     func testExample() {
-           XCTAssertTrue(true, "This is a placeholder test that always passes.")
-       }
-
+          XCTAssertTrue(true, "This is a placeholder test that always passes.")
+      }
 }

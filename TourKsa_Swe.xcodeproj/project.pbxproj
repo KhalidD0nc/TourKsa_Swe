@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ADF94CCF2D46BFC200560911 /* TourKsa_SweApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94CCE2D46BFC200560911 /* TourKsa_SweApp.swift */; };
-		ADF94CD12D46BFC200560911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94CD02D46BFC200560911 /* ContentView.swift */; };
 		ADF94CD32D46BFC400560911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF94CD22D46BFC400560911 /* Assets.xcassets */; };
 		ADF94CD62D46BFC400560911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF94CD52D46BFC400560911 /* Preview Assets.xcassets */; };
 		ADF94CE82D46C02E00560911 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94CE52D46C02E00560911 /* PlaceModel.swift */; };
@@ -68,13 +67,28 @@
 		ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D622D46C55300560911 /* FirebaseStorageCombine-Community */; };
 		ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D642D46C55300560911 /* FirebaseVertexAI */; };
 		ADF94D672D46C8E900560911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF94D662D46C8E900560911 /* GoogleService-Info.plist */; };
-		ADF94D6A2D46D3C600560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */; };
+		ADF94D6C2D46D5F700560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */; };
+		ADF94D6F2D46D6A300560911 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF94D6E2D46D6A300560911 /* XCTest.framework */; };
+		ADF94D702D46D6A300560911 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADF94D6E2D46D6A300560911 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADF94D712D46D6A300560911 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADF94D702D46D6A300560911 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ADF94CCB2D46BFC200560911 /* TourKsa_Swe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourKsa_Swe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF94CCE2D46BFC200560911 /* TourKsa_SweApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweApp.swift; sourceTree = "<group>"; };
-		ADF94CD02D46BFC200560911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADF94CD22D46BFC400560911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADF94CD52D46BFC400560911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADF94CE52D46C02E00560911 /* PlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
@@ -111,7 +125,8 @@
 		ADF94D322D46C25500560911 /* SavePlacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePlacesView.swift; sourceTree = "<group>"; };
 		ADF94D662D46C8E900560911 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADF94D682D46CD2600560911 /* TourKsa-Swe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TourKsa-Swe-Info.plist"; sourceTree = SOURCE_ROOT; };
-		ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
+		ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
+		ADF94D6E2D46D6A300560911 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +136,7 @@
 			files = (
 				ADF94D4F2D46C55300560911 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */,
+				ADF94D6F2D46D6A300560911 /* XCTest.framework in Frameworks */,
 				ADF94D512D46C55300560911 /* FirebaseFunctions in Frameworks */,
 				ADF94D5D2D46C55300560911 /* FirebasePerformance in Frameworks */,
 				ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */,
@@ -154,6 +170,7 @@
 			children = (
 				ADF94CCD2D46BFC200560911 /* TourKsa_Swe */,
 				ADF94CCC2D46BFC200560911 /* Products */,
+				ADF94D6D2D46D6A300560911 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,7 +194,6 @@
 				ADF94CDE2D46BFDB00560911 /* Core */,
 				ADF94CDD2D46BFD200560911 /* Extenstion */,
 				ADF94CDC2D46BFC900560911 /* Test */,
-				ADF94CD02D46BFC200560911 /* ContentView.swift */,
 				ADF94CD22D46BFC400560911 /* Assets.xcassets */,
 				ADF94CD42D46BFC400560911 /* Preview Content */,
 			);
@@ -195,7 +211,7 @@
 		ADF94CDC2D46BFC900560911 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */,
+				ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -363,6 +379,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		ADF94D6D2D46D6A300560911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADF94D6E2D46D6A300560911 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +397,7 @@
 				ADF94CC72D46BFC200560911 /* Sources */,
 				ADF94CC82D46BFC200560911 /* Frameworks */,
 				ADF94CC92D46BFC200560911 /* Resources */,
+				ADF94D712D46D6A300560911 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,8 +491,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF94CFE2D46C13700560911 /* UIApplication.swift in Sources */,
-				ADF94D6A2D46D3C600560911 /* TourKsa_SweTests.swift in Sources */,
-				ADF94CD12D46BFC200560911 /* ContentView.swift in Sources */,
 				ADF94CFD2D46C13700560911 /* Font.swift in Sources */,
 				ADF94CF22D46C0F000560911 /* WeatherService.swift in Sources */,
 				ADF94D1A2D46C1F700560911 /* PlaceDetailView.swift in Sources */,
@@ -494,6 +517,7 @@
 				ADF94D242D46C22D00560911 /* JourneyCardView.swift in Sources */,
 				ADF94CEA2D46C02E00560911 /* WeatherModel.swift in Sources */,
 				ADF94D192D46C1F700560911 /* PlaceViewModel.swift in Sources */,
+				ADF94D6C2D46D5F700560911 /* TourKsa_SweTests.swift in Sources */,
 				ADF94D2C2D46C24700560911 /* AuthViewModel.swift in Sources */,
 				ADF94D1C2D46C1F700560911 /* WeatherViewModel.swift in Sources */,
 				ADF94D112D46C1DD00560911 /* TabViewModel.swift in Sources */,
