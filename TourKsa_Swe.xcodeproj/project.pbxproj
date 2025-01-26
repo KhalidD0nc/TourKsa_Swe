@@ -68,6 +68,7 @@
 		ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D622D46C55300560911 /* FirebaseStorageCombine-Community */; };
 		ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D642D46C55300560911 /* FirebaseVertexAI */; };
 		ADF94D672D46C8E900560911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF94D662D46C8E900560911 /* GoogleService-Info.plist */; };
+		ADF94D6A2D46D3C600560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,8 @@
 		ADF94D312D46C25500560911 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ADF94D322D46C25500560911 /* SavePlacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePlacesView.swift; sourceTree = "<group>"; };
 		ADF94D662D46C8E900560911 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADF94D682D46CD2600560911 /* TourKsa-Swe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TourKsa-Swe-Info.plist"; sourceTree = SOURCE_ROOT; };
+		ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 		ADF94CCD2D46BFC200560911 /* TourKsa_Swe */ = {
 			isa = PBXGroup;
 			children = (
+				ADF94D682D46CD2600560911 /* TourKsa-Swe-Info.plist */,
 				ADF94CE42D46C00700560911 /* Outsource */,
 				ADF94CE22D46BFEB00560911 /* Model */,
 				ADF94CE12D46BFE600560911 /* Helper */,
@@ -191,6 +195,7 @@
 		ADF94CDC2D46BFC900560911 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				ADF94D692D46D3C600560911 /* TourKsa_SweTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF94CFE2D46C13700560911 /* UIApplication.swift in Sources */,
+				ADF94D6A2D46D3C600560911 /* TourKsa_SweTests.swift in Sources */,
 				ADF94CD12D46BFC200560911 /* ContentView.swift in Sources */,
 				ADF94CFD2D46C13700560911 /* Font.swift in Sources */,
 				ADF94CF22D46C0F000560911 /* WeatherService.swift in Sources */,
@@ -628,6 +634,7 @@
 				DEVELOPMENT_TEAM = U2FP3Z28UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TourKsa-Swe-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -661,6 +668,7 @@
 				DEVELOPMENT_TEAM = U2FP3Z28UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TourKsa-Swe-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
