@@ -1,0 +1,37 @@
+name: iOS CI
+
+# Trigger workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      # 1. Check out the repository
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      # 2. Set up Xcode environment
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v2
+        with:
+          xcode-version: 14.3 # Adjust to your Xcode version
+
+      # 3. Resolve Swift Package Manager dependencies
+      - name: Resolve Swift packages
+        run: xcodebuild -resolvePackageDependencies
+
+      # 4. Build and test the app
+      - name: Build and Test
+        run: |
+          xcodebuild \
+            -workspace TourKsa_Swe.xcworkspace \
+            -scheme TourKsa_Swe \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 14' \
+            clean test
