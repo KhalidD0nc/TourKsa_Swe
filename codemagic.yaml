@@ -1,0 +1,18 @@
+workflows:
+  ios-spm-workflow:
+    name: iOS SPM Build and Test
+    environment:
+      xcode: latest  # Use the latest Xcode version
+    scripts:
+      - name: Resolve Swift Package Dependencies
+        script: xcodebuild -resolvePackageDependencies -scheme "TourKsa_Swe"
+      - name: Build for iOS
+        script: xcodebuild clean build -scheme "TourKsa_Swe" -sdk iphonesimulator
+      - name: Run Unit Tests
+        script: xcodebuild test -scheme "TourKsa_Swe" -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
+    artifacts:
+      - build/**  # Collect build artifacts
+    publishing:
+      email:
+        recipients:
+          - khalidald4z@gmail.com  # Add your email to receive the build report
