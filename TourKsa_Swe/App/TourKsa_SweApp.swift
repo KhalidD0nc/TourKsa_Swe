@@ -5,9 +5,6 @@
 //  Created by Khalid R on 26/07/1446 AH.
 //
 
-
-
-
 import SwiftUI
 import FirebaseCore
 

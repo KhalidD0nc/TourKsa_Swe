@@ -67,24 +67,20 @@
 		ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D622D46C55300560911 /* FirebaseStorageCombine-Community */; };
 		ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D642D46C55300560911 /* FirebaseVertexAI */; };
 		ADF94D672D46C8E900560911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF94D662D46C8E900560911 /* GoogleService-Info.plist */; };
-		ADF94D6C2D46D5F700560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */; };
-		ADF94D6F2D46D6A300560911 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF94D6E2D46D6A300560911 /* XCTest.framework */; };
-		ADF94D702D46D6A300560911 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADF94D6E2D46D6A300560911 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADF94D812D47785800560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D802D47785800560911 /* TourKsa_SweTests.swift */; };
+		ADF94D882D47797800560911 /* PlaceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D872D47797800560911 /* PlaceServiceTests.swift */; };
+		ADF94D8A2D477B2700560911 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D892D477B2700560911 /* WeatherServiceTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		ADF94D712D46D6A300560911 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				ADF94D702D46D6A300560911 /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		ADF94D822D47785800560911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF94CC32D46BFC200560911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF94CCA2D46BFC200560911;
+			remoteInfo = TourKsa_Swe;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ADF94CCB2D46BFC200560911 /* TourKsa_Swe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourKsa_Swe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +121,11 @@
 		ADF94D322D46C25500560911 /* SavePlacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePlacesView.swift; sourceTree = "<group>"; };
 		ADF94D662D46C8E900560911 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADF94D682D46CD2600560911 /* TourKsa-Swe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TourKsa-Swe-Info.plist"; sourceTree = SOURCE_ROOT; };
-		ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
 		ADF94D6E2D46D6A300560911 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ADF94D7E2D47785800560911 /* TourKsa_SweTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourKsa_SweTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF94D802D47785800560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
+		ADF94D872D47797800560911 /* PlaceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceServiceTests.swift; sourceTree = "<group>"; };
+		ADF94D892D477B2700560911 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +135,6 @@
 			files = (
 				ADF94D4F2D46C55300560911 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */,
-				ADF94D6F2D46D6A300560911 /* XCTest.framework in Frameworks */,
 				ADF94D512D46C55300560911 /* FirebaseFunctions in Frameworks */,
 				ADF94D5D2D46C55300560911 /* FirebasePerformance in Frameworks */,
 				ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */,
@@ -162,6 +160,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADF94D7B2D47785800560911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -169,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF94CCD2D46BFC200560911 /* TourKsa_Swe */,
+				ADF94D7F2D47785800560911 /* TourKsa_SweTests */,
 				ADF94CCC2D46BFC200560911 /* Products */,
 				ADF94D6D2D46D6A300560911 /* Frameworks */,
 			);
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF94CCB2D46BFC200560911 /* TourKsa_Swe.app */,
+				ADF94D7E2D47785800560911 /* TourKsa_SweTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +200,6 @@
 				ADF94CDF2D46BFDE00560911 /* App */,
 				ADF94CDE2D46BFDB00560911 /* Core */,
 				ADF94CDD2D46BFD200560911 /* Extenstion */,
-				ADF94CDC2D46BFC900560911 /* Test */,
 				ADF94CD22D46BFC400560911 /* Assets.xcassets */,
 				ADF94CD42D46BFC400560911 /* Preview Content */,
 			);
@@ -206,14 +212,6 @@
 				ADF94CD52D46BFC400560911 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		ADF94CDC2D46BFC900560911 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				ADF94D6B2D46D5F700560911 /* TourKsa_SweTests.swift */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		ADF94CDD2D46BFD200560911 /* Extenstion */ = {
@@ -387,6 +385,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ADF94D7F2D47785800560911 /* TourKsa_SweTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF94D802D47785800560911 /* TourKsa_SweTests.swift */,
+				ADF94D872D47797800560911 /* PlaceServiceTests.swift */,
+				ADF94D892D477B2700560911 /* WeatherServiceTests.swift */,
+			);
+			path = TourKsa_SweTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,7 +405,6 @@
 				ADF94CC72D46BFC200560911 /* Sources */,
 				ADF94CC82D46BFC200560911 /* Frameworks */,
 				ADF94CC92D46BFC200560911 /* Resources */,
-				ADF94D712D46D6A300560911 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +441,24 @@
 			productReference = ADF94CCB2D46BFC200560911 /* TourKsa_Swe.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ADF94D7D2D47785800560911 /* TourKsa_SweTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF94D842D47785800560911 /* Build configuration list for PBXNativeTarget "TourKsa_SweTests" */;
+			buildPhases = (
+				ADF94D7A2D47785800560911 /* Sources */,
+				ADF94D7B2D47785800560911 /* Frameworks */,
+				ADF94D7C2D47785800560911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF94D832D47785800560911 /* PBXTargetDependency */,
+			);
+			name = TourKsa_SweTests;
+			productName = TourKsa_SweTests;
+			productReference = ADF94D7E2D47785800560911 /* TourKsa_SweTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -446,6 +471,10 @@
 				TargetAttributes = {
 					ADF94CCA2D46BFC200560911 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					ADF94D7D2D47785800560911 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = ADF94CCA2D46BFC200560911;
 					};
 				};
 			};
@@ -466,6 +495,7 @@
 			projectRoot = "";
 			targets = (
 				ADF94CCA2D46BFC200560911 /* TourKsa_Swe */,
+				ADF94D7D2D47785800560911 /* TourKsa_SweTests */,
 			);
 		};
 /* End PBXProject section */
@@ -480,6 +510,13 @@
 				ADF94CD32D46BFC400560911 /* Assets.xcassets in Resources */,
 				ADF94CF82D46C10B00560911 /* EricaOne-Regular.ttf in Resources */,
 				ADF94CF62D46C10B00560911 /* Data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF94D7C2D47785800560911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +554,6 @@
 				ADF94D242D46C22D00560911 /* JourneyCardView.swift in Sources */,
 				ADF94CEA2D46C02E00560911 /* WeatherModel.swift in Sources */,
 				ADF94D192D46C1F700560911 /* PlaceViewModel.swift in Sources */,
-				ADF94D6C2D46D5F700560911 /* TourKsa_SweTests.swift in Sources */,
 				ADF94D2C2D46C24700560911 /* AuthViewModel.swift in Sources */,
 				ADF94D1C2D46C1F700560911 /* WeatherViewModel.swift in Sources */,
 				ADF94D112D46C1DD00560911 /* TabViewModel.swift in Sources */,
@@ -525,7 +561,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADF94D7A2D47785800560911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF94D812D47785800560911 /* TourKsa_SweTests.swift in Sources */,
+				ADF94D882D47797800560911 /* PlaceServiceTests.swift in Sources */,
+				ADF94D8A2D477B2700560911 /* WeatherServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF94D832D47785800560911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF94CCA2D46BFC200560911 /* TourKsa_Swe */;
+			targetProxy = ADF94D822D47785800560911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ADF94CD72D46BFC400560911 /* Debug */ = {
@@ -664,6 +718,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,6 +753,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,6 +768,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ADF94D852D47785800560911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2FP3Z28UF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.TourKsa-SweTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TourKsa_Swe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TourKsa_Swe";
+			};
+			name = Debug;
+		};
+		ADF94D862D47785800560911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2FP3Z28UF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.TourKsa-SweTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TourKsa_Swe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TourKsa_Swe";
 			};
 			name = Release;
 		};
@@ -732,6 +824,15 @@
 			buildConfigurations = (
 				ADF94CDA2D46BFC400560911 /* Debug */,
 				ADF94CDB2D46BFC400560911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF94D842D47785800560911 /* Build configuration list for PBXNativeTarget "TourKsa_SweTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF94D852D47785800560911 /* Debug */,
+				ADF94D862D47785800560911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
