@@ -58,7 +58,7 @@ class WeatherServiceTests: XCTestCase {
         config.protocolClasses = [MockURLProtocol.self]
         let session = URLSession(configuration: config)
         
-        let weatherService = WeatherService()
+        let weatherService = WeatherService(session: session)  // Inject the mock session
         
         let expectation = XCTestExpectation(description: "Fetch weather success")
         
@@ -74,23 +74,26 @@ class WeatherServiceTests: XCTestCase {
     }
     
     func testFetchWeather_Failure() {
-        // Mock error
-        MockURLProtocol.mockResponseData = nil
-        MockURLProtocol.mockError = NSError(domain: "TestError", code: 1, userInfo: nil)
-        
-        let config = URLSessionConfiguration.default
-        config.protocolClasses = [MockURLProtocol.self]
-        let session = URLSession(configuration: config)
-        
-        let weatherService = WeatherService()
-        
-        let expectation = XCTestExpectation(description: "Fetch weather failure")
-        
-        weatherService.fetchWeather(for: "Riyadh") { weather in
-            XCTAssertNil(weather, "Weather should be nil on failure")
-            expectation.fulfill()
+        func testFetchWeather_Failure() {
+            MockURLProtocol.mockResponseData = nil
+            MockURLProtocol.mockError = NSError(domain: "TestError", code: 1, userInfo: nil)
+            
+            let config = URLSessionConfiguration.default
+            config.protocolClasses = [MockURLProtocol.self]
+            let session = URLSession(configuration: config)
+            
+            let weatherService = WeatherService(session: session)  // Inject the mock session
+            
+            
+            
+            let expectation = XCTestExpectation(description: "Fetch weather failure")
+            
+            weatherService.fetchWeather(for: "Riyadh") { weather in
+                XCTAssertNil(weather, "Weather should be nil on failure")
+                expectation.fulfill()
+            }
+            
+            wait(for: [expectation], timeout: 5.0)
         }
-        
-        wait(for: [expectation], timeout: 5.0)
     }
 }
