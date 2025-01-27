@@ -36,17 +36,25 @@ class WeatherServiceTests: XCTestCase {
     }
     
     func testFetchWeather_Success() {
-        // Mock response data
+        // Mock response data with full API structure
         let mockResponse = """
         {
-            "main": {
-                "temp": 25.0
-            },
             "weather": [
                 {
-                    "description": "clear sky"
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
                 }
             ],
+            "main": {
+                "temp": 25.0,
+                "feels_like": 24.0,
+                "temp_min": 23.0,
+                "temp_max": 26.0,
+                "pressure": 1015,
+                "humidity": 60
+            },
             "name": "Riyadh"
         }
         """.data(using: .utf8)!
@@ -58,11 +66,14 @@ class WeatherServiceTests: XCTestCase {
         config.protocolClasses = [MockURLProtocol.self]
         let session = URLSession(configuration: config)
         
-        let weatherService = WeatherService(session: session)  // Inject the mock session
-        
+        let weatherService = WeatherService(session: session)
         let expectation = XCTestExpectation(description: "Fetch weather success")
         
         weatherService.fetchWeather(for: "Riyadh") { weather in
+            if let error = MockURLProtocol.mockError {
+                print("Mock error: \(error)")
+            }
+            
             XCTAssertNotNil(weather, "Weather should not be nil")
             XCTAssertEqual(weather?.temperature, 25.0, "Temperature should be 25.0")
             XCTAssertEqual(weather?.description, "clear sky", "Description should be 'clear sky'")

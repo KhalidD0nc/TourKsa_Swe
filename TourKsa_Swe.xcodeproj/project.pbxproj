@@ -67,9 +67,8 @@
 		ADF94D632D46C55300560911 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D622D46C55300560911 /* FirebaseStorageCombine-Community */; };
 		ADF94D652D46C55300560911 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = ADF94D642D46C55300560911 /* FirebaseVertexAI */; };
 		ADF94D672D46C8E900560911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF94D662D46C8E900560911 /* GoogleService-Info.plist */; };
-		ADF94D812D47785800560911 /* TourKsa_SweTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D802D47785800560911 /* TourKsa_SweTests.swift */; };
-		ADF94D882D47797800560911 /* PlaceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D872D47797800560911 /* PlaceServiceTests.swift */; };
 		ADF94D8A2D477B2700560911 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D892D477B2700560911 /* WeatherServiceTests.swift */; };
+		ADF94D8C2D47C3B800560911 /* PlaceServicePerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF94D8B2D47C3B800560911 /* PlaceServicePerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +122,8 @@
 		ADF94D682D46CD2600560911 /* TourKsa-Swe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TourKsa-Swe-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ADF94D6E2D46D6A300560911 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ADF94D7E2D47785800560911 /* TourKsa_SweTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourKsa_SweTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADF94D802D47785800560911 /* TourKsa_SweTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourKsa_SweTests.swift; sourceTree = "<group>"; };
-		ADF94D872D47797800560911 /* PlaceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceServiceTests.swift; sourceTree = "<group>"; };
 		ADF94D892D477B2700560911 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
+		ADF94D8B2D47C3B800560911 /* PlaceServicePerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceServicePerformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,9 +386,8 @@
 		ADF94D7F2D47785800560911 /* TourKsa_SweTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADF94D802D47785800560911 /* TourKsa_SweTests.swift */,
-				ADF94D872D47797800560911 /* PlaceServiceTests.swift */,
 				ADF94D892D477B2700560911 /* WeatherServiceTests.swift */,
+				ADF94D8B2D47C3B800560911 /* PlaceServicePerformanceTests.swift */,
 			);
 			path = TourKsa_SweTests;
 			sourceTree = "<group>";
@@ -565,8 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF94D812D47785800560911 /* TourKsa_SweTests.swift in Sources */,
-				ADF94D882D47797800560911 /* PlaceServiceTests.swift in Sources */,
+				ADF94D8C2D47C3B800560911 /* PlaceServicePerformanceTests.swift in Sources */,
 				ADF94D8A2D477B2700560911 /* WeatherServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

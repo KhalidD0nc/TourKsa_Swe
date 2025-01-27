@@ -19,12 +19,40 @@ class WeatherService {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(cityEncoded)&units=metric&appid=\(apiKey)"
         
         guard let url = URL(string: urlString) else {
-            completion(nil)
+            DispatchQueue.main.async {
+                completion(nil)
+            }
             return
         }
         
-        session.dataTask(with: url) { data, response, error in  // Use session instead of URLSession.shared
-            // ... rest of the code remains the same
+        session.dataTask(with: url) { data, response, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Network error: \(error.localizedDescription)")
+                    completion(nil)
+                    return
+                }
+                
+                guard let data = data else {
+                    print("No data received")
+                    completion(nil)
+                    return
+                }
+                
+                do {
+                    print("Received data: \(String(data: data, encoding: .utf8) ?? "unable to stringify")")
+                    let response = try JSONDecoder().decode(WeatherModel.WeatherResponse.self, from: data)
+                    let weather = WeatherModel(
+                        temperature: response.main.temp,
+                        description: response.weather.first?.description ?? "Unknown",
+                        cityName: response.name
+                    )
+                    completion(weather)
+                } catch {
+                    print("Decoding error: \(error)")
+                    completion(nil)
+                }
+            }
         }.resume()
     }
 }

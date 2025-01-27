@@ -23,9 +23,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TourKsa_SweApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var vm = PlaceViewModel()
+//    @StateObject var weatherService = WeatherService()
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            ContainerView()
                 .preferredColorScheme(.light)
                 .environmentObject(vm)
         }
